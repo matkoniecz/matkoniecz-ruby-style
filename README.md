@@ -18,7 +18,13 @@ gem 'matkoniecz-ruby-style'
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a `.rubocop.yml` with the following directives:
+
+```yaml
+inherit_gem:
+  matkoniecz-ruby-style:
+    - default.yml
+```
 
 ## How to release new gem version
 
