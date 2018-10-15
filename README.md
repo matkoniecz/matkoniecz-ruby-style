@@ -23,7 +23,7 @@ Create a `.rubocop.yml` with the following directives:
 ```yaml
 inherit_gem:
   matkoniecz-ruby-style:
-    - default.yml
+    - standard_rubocop_config.yml
 ```
 
 ## How to release new gem version
