@@ -29,6 +29,8 @@ Style/WordArray:
 # it is likely to detect bugs, there is no point in masking them by running autocorrect
 Lint/UnusedMethodArgument:
   AutoCorrect: False
+Lint/UnusedBlockArgument:
+  AutoCorrect: False
 
 # see https://github.com/bbatsov/rubocop/issues/1747#issuecomment-223370141
 # this auto-correct rule may break things and is not a clear improvement
