@@ -1,3 +1,8 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.4
+
 # not preferred as this rule makes harder to move/add/remove items
 Style/TrailingCommaInLiteral:
   Enabled: false
@@ -36,9 +41,6 @@ Lint/UnusedBlockArgument:
 # this auto-correct rule may break things and is not a clear improvement
 Style/SpecialGlobalVars:
   Enabled: false
-
-#AllCops:
-#  TargetRubyVersion: 2.3
 
 # Uncomment following rules to allow using tabs:
 #Layout/Tab:
