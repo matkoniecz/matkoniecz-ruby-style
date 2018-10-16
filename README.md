@@ -14,6 +14,12 @@ or add this line to your application's Gemfile:
 gem 'matkoniecz-ruby-style'
 ```
 
+or, for a Ruby library, add this to your gemspec:
+
+```ruby
+spec.add_development_dependency 'matkoniecz-ruby-style'
+```
+
 ## Usage
 
 Create a `.rubocop.yml` with the following directives:
