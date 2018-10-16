@@ -1,1 +1,1 @@
-inherit_from: matkoniecz-ruby-style.yml
+inherit_from: standard_rubocop_config.yml
