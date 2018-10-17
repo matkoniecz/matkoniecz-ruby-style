@@ -30,6 +30,8 @@ inherit_gem:
     - standard_rubocop_config.yml
 ```
 
+You do not need to include rubocop directly in your application's dependencies. This gem includes a specific version of `rubocop` and `rubocop-rspec` that is shared across all projects.
+
 ## How to release new gem version
 
 ```
