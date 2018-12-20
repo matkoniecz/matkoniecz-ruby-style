@@ -44,6 +44,9 @@ Lint/UnusedBlockArgument:
 Style/SpecialGlobalVars:
   Enabled: false
 
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
 # Uncomment following rules to allow using tabs:
 #Layout/Tab:
 #  Enabled: false
