@@ -48,6 +48,14 @@ Style/SpecialGlobalVars:
 Style/EmptyMethod:
   EnforcedStyle: expanded
 
+# proposed changed code is ugly as hell
+# if there is real performance benefit without ugly side-effects
+# it should be fixed at language level
+# potential investigation should start from
+# https://github.com/rubocop-hq/rubocop/commit/864531f61634354570a6b4458cb599c4373659b7
+Performance/RegexpMatch:
+  Enabled: false
+
 # Uncomment following rules to allow using tabs:
 #Layout/Tab:
 #  Enabled: false
