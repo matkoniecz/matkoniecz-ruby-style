@@ -56,6 +56,34 @@ Style/EmptyMethod:
 Performance/RegexpMatch:
   Enabled: false
 
+# unconvinced that it is useful
+Style/RaiseArgs:
+  Enabled: false
+
+# Ruby-specific syntax has no benefits whatsover over slashes
+# if there is one let me know
+Style/RegexpLiteral:
+  EnforcedStyle: slashes
+
+# Standard array is much better and less overcomplicated
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+# Neither is much better, consistency is much more important
+# for example see:
+# group = ["#{fish[0]}", "#{fish[0]} filet", "filet z #{fish[1]}"]
+# group = [(fish[0]).to_s, "#{fish[0]} filet", "filet z #{fish[1]}"]
+Style/UnneededInterpolation:
+  Enabled: false
+
+# local style optmization is better than global consistency
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+
+# this rubyism is not more readable
+Style/NumericPredicate:
+  Enabled: false
+
 # Uncomment following rules to allow using tabs:
 #Layout/Tab:
 #  Enabled: false
