@@ -84,6 +84,10 @@ Style/StringLiteralsInInterpolation:
 Style/NumericPredicate:
   Enabled: false
 
+# disable due to bug reported as https://github.com/rubocop-hq/rubocop/issues/6630
+Style/CommentAnnotation:
+  Enabled: false
+
 # Uncomment following rules to allow using tabs:
 #Layout/Tab:
 #  Enabled: false
