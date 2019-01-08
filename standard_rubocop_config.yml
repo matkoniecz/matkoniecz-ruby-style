@@ -55,6 +55,89 @@ Style/EmptyMethod:
 # https://github.com/rubocop-hq/rubocop/commit/864531f61634354570a6b4458cb599c4373659b7
 Performance/RegexpMatch:
   Enabled: false
+# disable performance cops - in general if something would be a good idea
+# from readability view it would be included in Lint group
+# It means that typical cop in Performance group will make code LESS readable
+# And typically running profiler is much better optimization method than
+# making code less readable/more fragile/more confusing
+# And again: changes that are truly better should be changed on language level
+
+# this two cops seems to not hurt readability unlike many other performance cops
+Performance/UnneededSort:
+  #Use `min` instead of `sort.first` etc
+  Enabled: true
+
+# see https://github.com/rubocop-hq/rubocop/issues/6637
+# "move Performance/LstripRstrip to Lint/LstripRstrip"
+Performance/LstripRstrip:
+  Description: 'Use `strip` instead of `lstrip.rstrip`.'
+
+# following also seems to be useful
+Performance/RedundantBlockCall:
+  # Use `yield` instead of `block.call`.
+  Enabled: true
+Performance/RedundantMatch:
+  # Use `=~` instead of `String#match` or `Regexp#match` in a context where the
+  # returned `MatchData` is not needed.
+  Enabled: true
+Performance/RedundantMerge:
+  # Use Hash#[]=, rather than Hash#merge! with a single key-value pair.
+  Enabled: true
+Performance/RedundantSortBy:
+  # Use `sort` instead of `sort_by { |x| x }`.
+  Enabled: true
+Performance/Sample:
+  #Use `sample` rather `shuffle.first`, `shuffle.last`, and `shuffle[Integer]`.
+  Enabled: true
+Performance/ChainArrayAllocation:
+  # Instead of chaining array methods that allocate new arrays, mutate an
+  # existing array.
+  Enabled: true
+
+# mass cop disable follows
+Performance/StartWith:
+  #'Use `start_with?` instead of a regex match anchored to the beginning of a string.'
+  Enabled: false
+Performance/TimesMap:
+  Enabled: false
+Performance/UnfreezeString:
+  Enabled: false
+Performance/UriDefaultParser:
+  Enabled: false
+Performance/Caller:
+  Enabled: false
+Performance/CaseWhenSplat:
+  Enabled: false
+Performance/Casecmp:
+  Enabled: false
+Performance/CompareWithBlock:
+  Enabled: false
+Performance/Count:
+  Enabled: false
+Performance/Detect:
+  Enabled: false
+Performance/DoubleStartEndWith:
+  Enabled: false
+Performance/EndWith:
+  Enabled: false
+Performance/FixedSize:
+  Enabled: false
+Performance/FlatMap:
+  Enabled: false
+Performance/InefficientHashSearch:
+  Enabled: false
+Performance/OpenStruct:
+  Enabled: false
+Performance/RangeInclude:
+  Enabled: false
+Performance/Size:
+  Enabled: false
+Performance/StringReplacement:
+  Enabled: false
+Performance/ReverseEach:
+  Enabled: false
+Performance/RegexpMatch:
+  Enabled: false
 
 # unconvinced that it is useful
 Style/RaiseArgs:
