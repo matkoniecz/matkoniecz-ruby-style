@@ -60,6 +60,10 @@ Performance/RegexpMatch:
 Style/RaiseArgs:
   Enabled: false
 
+# adds useless line without benefit outweighting readability loss
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
 # Ruby-specific syntax has no benefits whatsover over slashes
 # if there is one let me know
 Style/RegexpLiteral:
