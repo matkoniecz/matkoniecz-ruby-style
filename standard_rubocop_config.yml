@@ -175,6 +175,11 @@ Style/NumericPredicate:
 Style/CommentAnnotation:
   Enabled: false
 
+Naming/UncommunicativeMethodParamName:
+  AllowedNames:
+    - bb #standard shortening of "bounding box"
+    - r #standard shortening of "radius"
+
 # Uncomment following rules to allow using tabs:
 #Layout/Tab:
 #  Enabled: false
