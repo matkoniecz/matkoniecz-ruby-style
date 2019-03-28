@@ -1,10 +1,6 @@
-lib = File.expand_path("../lib", __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "matkoniecz/ruby/style/version"
-
 Gem::Specification.new do |spec|
   spec.name          = "matkoniecz-ruby-style"
-  spec.version       = Matkoniecz::Ruby::Style::VERSION
+  spec.version       = 1.0
   spec.authors       = ["Mateusz Konieczny"]
   spec.email         = ["matkoniecz@gmail.com"]
 

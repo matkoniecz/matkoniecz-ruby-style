@@ -6,6 +6,6 @@ err_report() {
 }
 trap 'err_report $LINENO' ERR
 
-rm ./*.gem
+rm ./*.gem | true
 gem build ./*.gemspec
 gem install --user-install ./*.gem
