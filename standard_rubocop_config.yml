@@ -62,13 +62,15 @@ Performance/RegexpMatch:
 # making code less readable/more fragile/more confusing
 # And again: changes that are truly better should be changed on language level
 
-# this two cops seems to not hurt readability unlike many other performance cops
+# this cops seems to not hurt readability unlike many other performance cops
+# see https://github.com/rubocop-hq/rubocop/issues/6871
 Performance/UnneededSort:
   #Use `min` instead of `sort.first` etc
   Enabled: true
 
 # see https://github.com/rubocop-hq/rubocop/issues/6637
 # "move Performance/LstripRstrip to Lint/LstripRstrip"
+# changed!
 Performance/LstripRstrip:
   Description: 'Use `strip` instead of `lstrip.rstrip`.'
 
@@ -83,9 +85,11 @@ Performance/RedundantMatch:
 Performance/RedundantMerge:
   # Use Hash#[]=, rather than Hash#merge! with a single key-value pair.
   Enabled: true
+# see https://github.com/rubocop-hq/rubocop/issues/6871
 Performance/RedundantSortBy:
   # Use `sort` instead of `sort_by { |x| x }`.
   Enabled: true
+# see https://github.com/rubocop-hq/rubocop/issues/6871
 Performance/Sample:
   #Use `sample` rather `shuffle.first`, `shuffle.last`, and `shuffle[Integer]`.
   Enabled: true
@@ -95,6 +99,9 @@ Performance/ChainArrayAllocation:
   Enabled: true
 
 # mass cop disable follows
+# will be fixed by https://github.com/rubocop-hq/rubocop/issues/5977
+# once useful Performance cops will be upgraded to Style cops
+# it may be useful to post it as a workaround
 Performance/StartWith:
   #'Use `start_with?` instead of a regex match anchored to the beginning of a string.'
   Enabled: false
