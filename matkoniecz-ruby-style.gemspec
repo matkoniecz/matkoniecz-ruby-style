@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "matkoniecz-ruby-style"
-  spec.version       = 1.1
+  spec.version       = 1.2
   spec.authors       = ["Mateusz Konieczny"]
   spec.email         = ["matkoniecz@gmail.com"]
 
