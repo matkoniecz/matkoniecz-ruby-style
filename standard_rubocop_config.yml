@@ -1,7 +1,7 @@
 require: rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.5
 
 # not preferred as this rule makes harder to move/add/remove items
 Style/TrailingCommaInArrayLiteral:
@@ -68,11 +68,12 @@ Style/SymbolArray:
 # Neither is much better, consistency is much more important
 # for example see:
 # group = ["#{fish[0]}", "#{fish[0]} filet", "filet z #{fish[1]}"]
+# vs
 # group = [(fish[0]).to_s, "#{fish[0]} filet", "filet z #{fish[1]}"]
 Style/UnneededInterpolation:
   Enabled: false
 
-# local style optmization is better than global consistency
+# local style optimization is better than global consistency
 Style/StringLiteralsInInterpolation:
   Enabled: false
 
@@ -80,14 +81,23 @@ Style/StringLiteralsInInterpolation:
 Style/NumericPredicate:
   Enabled: false
 
-# disable due to bug reported as https://github.com/rubocop-hq/rubocop/issues/6630
+# disabled due to bug reported as https://github.com/rubocop-hq/rubocop/issues/6630
 Style/CommentAnnotation:
+  Enabled: false
+
+# this blank lines are neither helpful nor useful
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
+# not convinced that removing get_ is useful use of my time
+Naming/AccessorMethodName:
   Enabled: false
 
 Naming/UncommunicativeMethodParamName:
   AllowedNames:
-    - bb #standard shortening of "bounding box"
-    - r #standard shortening of "radius"
+    - bb # standard shortening of "bounding box"
+    - r # standard shortening of "radius"
+    - mb # standard for megabytes
 
 # Uncomment following rules to allow using tabs:
 #Layout/Tab:
