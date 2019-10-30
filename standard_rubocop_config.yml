@@ -98,6 +98,19 @@ Naming/UncommunicativeMethodParamName:
     - bb # standard shortening of "bounding box"
     - r # standard shortening of "radius"
     - mb # standard for megabytes
+    - x # typically perfectly fine for position to a plane
+    - "y" # typically perfectly fine for position to a plane
+
+# avoding jumboXXLplus lines is a good idea, but
+# there is no reason to stick to 80 characters
+# a bit longer lines seems fine to me
+Metrics/LineLength:
+  Max: 88
+
+# benefits from adding ? to the method names are outweighted
+# by increased costs of context switch between languages
+Naming/PredicateName:
+  Enabled: false
 
 # Uncomment following rules to allow using tabs:
 #Layout/Tab:
