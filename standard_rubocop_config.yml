@@ -70,7 +70,7 @@ Style/SymbolArray:
 # group = ["#{fish[0]}", "#{fish[0]} filet", "filet z #{fish[1]}"]
 # vs
 # group = [(fish[0]).to_s, "#{fish[0]} filet", "filet z #{fish[1]}"]
-Style/UnneededInterpolation:
+Style/RedundantInterpolation:
   Enabled: false
 
 # local style optimization is better than global consistency
