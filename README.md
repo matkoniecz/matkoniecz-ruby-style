@@ -34,14 +34,7 @@ You do not need to include rubocop directly in your application's dependencies. 
 
 ## How to release new gem version
 
-```
-rm ./*.gem
-gem build ./*.gemspec
-gem install --user-install ./*.gem
-gem push *.gem
-```
-
-Code to install new version locally is also in `reinstall.sh` file.
+See `reinstall.sh` and `reinstall_and_push_new_version.sh` files.
 
 ## Contributing
 
