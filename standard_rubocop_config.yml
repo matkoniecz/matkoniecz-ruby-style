@@ -3,6 +3,14 @@ require: rubocop-rspec
 AllCops:
   TargetRubyVersion: 2.5
 
+# disabled due to bug reported as https://github.com/rubocop-hq/rubocop/issues/6630
+Style/CommentAnnotation:
+  Enabled: false
+
+# disable due to a bug reported in https://github.com/rubocop-hq/rubocop/issues/7569
+Style/YodaCondition:
+  Enabled: false
+
 # not preferred as this rule makes harder to move/add/remove items
 Style/TrailingCommaInArrayLiteral:
   Enabled: false
@@ -79,10 +87,6 @@ Style/StringLiteralsInInterpolation:
 
 # this rubyism is not more readable
 Style/NumericPredicate:
-  Enabled: false
-
-# disabled due to bug reported as https://github.com/rubocop-hq/rubocop/issues/6630
-Style/CommentAnnotation:
   Enabled: false
 
 # this blank lines are neither helpful nor useful
