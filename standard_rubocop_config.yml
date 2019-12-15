@@ -93,7 +93,7 @@ Layout/EmptyLineAfterGuardClause:
 Naming/AccessorMethodName:
   Enabled: false
 
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   AllowedNames:
     - bb # standard shortening of "bounding box"
     - r # standard shortening of "radius"
