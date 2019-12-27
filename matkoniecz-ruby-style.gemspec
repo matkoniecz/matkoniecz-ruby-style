@@ -16,6 +16,6 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-  spec.add_dependency "rubocop", "~> 0.77"
+  spec.add_dependency "rubocop", "~> 0.77" # on 0.79+ rubocop reeenable Style/YodaCondition
   spec.add_dependency "rubocop-rspec", "~> 1.29.1"
 end

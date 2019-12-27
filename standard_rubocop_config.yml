@@ -8,6 +8,7 @@ Style/CommentAnnotation:
   Enabled: false
 
 # disable due to a bug reported in https://github.com/rubocop-hq/rubocop/issues/7569
+# 0.79+ rubocop should allow to reenable it
 Style/YodaCondition:
   Enabled: false
 
