@@ -1,15 +1,11 @@
 require: rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 2.7
+  NewCops: enable
 
 # disabled due to bug reported as https://github.com/rubocop-hq/rubocop/issues/6630
 Style/CommentAnnotation:
-  Enabled: false
-
-# disable due to a bug reported in https://github.com/rubocop-hq/rubocop/issues/7569
-# 0.79+ rubocop should allow to reenable it - see https://github.com/rubocop-hq/rubocop/blob/master/CHANGELOG.md
-Style/YodaCondition:
   Enabled: false
 
 # not preferred as this rule makes harder to move/add/remove items
@@ -109,7 +105,7 @@ Naming/MethodParameterName:
 # avoding jumboXXLplus lines is a good idea, but
 # there is no reason to stick to 80 characters
 # a bit longer lines seems fine to me
-Metrics/LineLength:
+Layout/LineLength:
   Max: 88
 
 # benefits from adding ? to the method names are outweighted
