@@ -4,6 +4,12 @@ AllCops:
   TargetRubyVersion: 2.7
   NewCops: enable
 
+# this hurts readability and makes code more confusing
+# Rubocop is has opinion, Python has opinion, I also have opinion
+# I would gladly enable MethodCallRequireArgsParentheses
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: false
+
 # not preferred as this rule makes harder to move/add/remove items
 Style/TrailingCommaInArrayLiteral:
   Enabled: false
