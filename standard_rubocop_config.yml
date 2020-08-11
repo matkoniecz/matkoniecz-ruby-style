@@ -4,10 +4,6 @@ AllCops:
   TargetRubyVersion: 2.7
   NewCops: enable
 
-# disabled due to bug reported as https://github.com/rubocop-hq/rubocop/issues/6630
-Style/CommentAnnotation:
-  Enabled: false
-
 # not preferred as this rule makes harder to move/add/remove items
 Style/TrailingCommaInArrayLiteral:
   Enabled: false
@@ -107,6 +103,11 @@ Naming/MethodParameterName:
 # a bit longer lines seems fine to me
 Layout/LineLength:
   Max: 88
+
+# disabled due to bug reported as https://github.com/rubocop-hq/rubocop/issues/6630
+# note that bug is likely to be closed but wontfixed
+Style/CommentAnnotation:
+  Enabled: false
 
 # benefits from adding ? to the method names are outweighted
 # by increased costs of context switch between languages
