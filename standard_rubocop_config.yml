@@ -5,7 +5,8 @@ AllCops:
   NewCops: enable
 
 # this hurts readability and makes code more confusing
-# Rubocop is has opinion, Python has opinion, I also have opinion
+# Rubocop has an opinion, Python has an opinion, I also have opinion
+# and in ths case I strongly prefer Python version
 # I would gladly enable MethodCallRequireArgsParentheses
 Style/MethodCallWithoutArgsParentheses:
   Enabled: false
