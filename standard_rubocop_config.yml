@@ -6,7 +6,7 @@ AllCops:
 
 # this hurts readability and makes code more confusing
 # Rubocop has an opinion, Python has an opinion, I also have opinion
-# and in ths case I strongly prefer Python version
+# and in this case I strongly prefer Python version
 # I would gladly enable MethodCallRequireArgsParentheses
 Style/MethodCallWithoutArgsParentheses:
   Enabled: false
@@ -107,7 +107,7 @@ Naming/MethodParameterName:
     - x # typically perfectly fine for position to a plane
     - "y" # typically perfectly fine for position to a plane
 
-# avoding jumboXXLplus lines is a good idea, but
+# avoiding jumboXXLplus lines is a good idea, but
 # there is no reason to stick to 80 characters
 # a bit longer lines seems fine to me
 Layout/LineLength:
